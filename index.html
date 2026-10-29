@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f7">
+  <meta name="description" content="Official links RIA CANTIQQ">
+  <title>RIA CANTIQQ | Official Links</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --pink: #ff4da6;
+      --pink-dark: #e62e89;
+      --pink-light: #ffe0ef;
+      --text: #49283a;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+      background:
+        radial-gradient(ellipse at 15% 10%, #ffd3e8 0, transparent 38%),
+        radial-gradient(ellipse at 90% 80%, #ffc9e4 0, transparent 35%),
+        linear-gradient(145deg, #fff9fc, #ffeef6, #fff5fa);
+    }
+
+    .glow {
+      position: fixed;
+      width: 230px;
+      height: 230px;
+      background: #ff73bb;
+      filter: blur(100px);
+      opacity: .22;
+      border-radius: 50%;
+      pointer-events: none;
+      animation: float 7s ease-in-out infinite alternate;
+    }
+
+    .glow.one {
+      top: 5%;
+      left: -100px;
+    }
+
+    .glow.two {
+      bottom: 5%;
+      right: -100px;
+      animation-delay: -3s;
+    }
+
+    @keyframes float {
+      from { transform: translateY(-10px); }
+      to { transform: translateY(35px); }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      width: min(100% - 32px, 440px);
+      margin: auto;
+      padding: 48px 0 24px;
+      text-align: center;
+      animation: appear .8s ease both;
+    }
+
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(22px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo-wrap {
+      width: 122px;
+      height: 122px;
+      margin: 0 auto 22px;
+      border-radius: 35px;
+      padding: 5px;
+      background: linear-gradient(145deg, #fff, #ff9ed0, #f34da3);
+      box-shadow: 0 12px 38px #f46eaf44;
+      transform: rotate(-3deg);
+      transition: .35s;
+    }
+
+    .logo-wrap:hover {
+      transform: rotate(0deg) scale(1.06);
+    }
+
+    .logo {
+      width: 100%;
+      height: 100%;
+      border-radius: 31px;
+      object-fit: cover;
+      background: white;
+    }
+
+    .brand {
+      font-size: clamp(27px, 7vw, 35px);
+      font-weight: 800;
+      letter-spacing: 1px;
+      line-height: 1.3;
+      background: linear-gradient(90deg, #d92b81, #ff64b0, #c52d79);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #9d7188;
+      letter-spacing: 2px;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 19px;
+      padding: 8px 14px;
+      background: #ffffffa6;
+      border: 1px solid #ffc6e0;
+      border-radius: 30px;
+      font-size: 11px;
+      color: #a82f70;
+      box-shadow: 0 5px 20px #ed5ca51a;
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #ff4da6;
+      box-shadow: 0 0 9px #ff4da6;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      50% { opacity: .4; transform: scale(.75); }
+    }
+
+    .heading {
+      margin: 35px 0 15px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      color: #b17d99;
+    }
+
+    .links {
+      display: grid;
+      gap: 15px;
+    }
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 17px;
+      text-align: left;
+      text-decoration: none;
+      border-radius: 22px;
+      transition: transform .25s, box-shadow .25s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .link-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .channel {
+      color: white;
+      background: linear-gradient(120deg, #ff4da6, #ed328f);
+      box-shadow: 0 12px 27px #ee489c40;
+    }
+
+    .channel:hover {
+      box-shadow: 0 16px 34px #ee489c65;
+    }
+
+    .chat {
+      color: #8d3265;
+      background: #ffffffc9;
+      border: 1px solid #f6bbd8;
+      box-shadow: 0 10px 25px #c8498310;
+    }
+
+    .chat:hover {
+      box-shadow: 0 14px 28px #c8498322;
+    }
+
+    .icon-box {
+      width: 49px;
+      height: 49px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      font-size: 23px;
+    }
+
+    .channel .icon-box {
+      background: #ffffff28;
+    }
+
+    .chat .icon-box {
+      background: #ffe0ef;
+      color: #e7338d;
+    }
+
+    .link-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .link-title {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .link-desc {
+      font-size: 10px;
+      margin-top: 4px;
+      opacity: .82;
+    }
+
+    .arrow {
+      font-size: 15px;
+      opacity: .8;
+    }
+
+    .note {
+      margin-top: 27px;
+      padding: 15px;
+      border-radius: 18px;
+      background: #ffffff80;
+      border: 1px solid #ffffff;
+      font-size: 11px;
+      line-height: 1.9;
+      color: #a17b90;
+    }
+
+    .note i {
+      color: #ed4b9b;
+      margin-right: 5px;
+    }
+
+    footer {
+      padding-top: 30px;
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: #b18da2;
+    }
+
+    footer .heart {
+      color: #ed4b9b;
+    }
+
+    @media (max-width: 360px) {
+      .container { padding-top: 35px; }
+      .link-card { padding: 13px; }
+      .link-title { font-size: 13px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="glow one"></div>
+  <div class="glow two"></div>
+
+  <main class="container">
+    <div class="logo-wrap">
+      <!-- Simpan logo kamu dengan nama logo.png -->
+      <img class="logo" src="logo.jpeg" alt="Logo RIA CANTIQQ">
+    </div>
+
+    <h1 class="brand">RIA CANTIQQ</h1>
+    <p class="subtitle">YOUR LITTLE PINK CORNER ♡</p>
+
+    <div class="status">
+      <span class="dot"></span>
+      OFFICIAL LINKS
+    </div>
+
+    <p class="heading">✦ CONNECT WITH US ✦</p>
+
+    <div class="links">
+      <a class="link-card channel"
+        href="https://whatsapp.com/channel/0029VbDCbyP60eBWhIp4Ih2a" 
+         target="_blank"
+         rel="noopener noreferrer">
+        <div class="icon-box">
+          <i class="fa-solid fa-tower-broadcast"></i>
+        </div>
+        <div class="link-info">
+          <div class="link-title">Saluran WhatsApp</div>
+          <div class="link-desc">Join channel & lihat update terbaru</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+      </a>
+
+    
+  
+<!-- TOMBOL CHAT WHATSAPP -->
+<a class="link-card chat"
+
+   href="https://wa.me/6285143314272?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20produk%20RIA%20CANTIQQ"
+   target="_blank"
+   rel="noopener noreferrer">
+
+  <div class="icon-box">
+    <i class="fa-brands fa-whatsapp"></i>
+  </div>
+
+  <div class="link-info">
+    <div class="link-title">Chat WhatsApp</div>
+    <div class="link-desc">Ada pertanyaan? Hubungi kami langsung</div>
+  </div>
+
+  <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+</a>
+</div>
+    <div class="note">
+      <i class="fa-solid fa-heart"></i>
+      Terima kasih sudah berkunjung ke RIA CANTIQQ.
+      <br>Semoga harimu selalu menyenangkan! ♡
+    </div>
+
+    <footer>
+      MADE WITH <span class="heart">♥</span> BY RIA CANTIQQ
+      <br><br>© 2026 ALL RIGHTS RESERVED
+    </footer>
+  </main>
+</body>
+</html>
